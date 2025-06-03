@@ -1,0 +1,28 @@
+name: Run tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+       - main
+
+jobs:
+  test:
+    run-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: action/checkout@v3
+      
+      - name: set up Node js
+        uses: action/checkout@v3
+        with:
+          node-version: 18
+      
+      - name: Install dependencies
+        run: npm Install
+      
+      - name: Run tests
+        run: mpm run test
