@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "hola mundo con express",
   "type": "module",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules node node_modules/jest/bin/jest.js",
     "dev": "node --watch app.js"
