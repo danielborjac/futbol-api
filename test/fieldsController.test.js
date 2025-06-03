@@ -26,8 +26,6 @@ describe("fieldsController", () => {
 
     expect(fileService.readJSON).toHaveBeenCalledWith("./data/fields.json");
     expect(res.json).toHaveBeenCalledWith(mockFields);
-    expect(1).toBe(2);
-
   });
 
   test("createFields agrega un nuevo campo", () => {
