@@ -25,4 +25,4 @@ jobs:
         run: npm Install
       
       - name: Run tests
-        run: mpm run test
+        run: mpm test
